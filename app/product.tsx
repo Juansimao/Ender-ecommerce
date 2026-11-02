@@ -4,11 +4,7 @@ import { useEffect, useState } from "react";
 
 const PRODUCTS_URL = "http://127.0.0.1:5000/products";
 
-const defaultProductImage =
-  "data:image/svg+xml;utf8," +
-  encodeURIComponent(
-    '<svg xmlns="http://www.w3.org/2000/svg" width="150" height="150"><rect width="150" height="150" fill="#e4e4e7"/></svg>'
-  );
+const defaultProductImage = "/Juan-Franco3.JPG";
 
 type InstallmentData = {
   number: number;
