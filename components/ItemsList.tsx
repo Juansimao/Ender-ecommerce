@@ -9,10 +9,10 @@ type Props = {
 function ItemsList(props: Props) {
   const rows: React.ReactNode[] = [];
 
-  props.products.forEach((product, index) => {
+  props.products.forEach((product) => {
     rows.push(
       <Item
-        key={index}
+        key={product.code}
         product={product}
         onQuantityChanged={props.onQuantityChanged}
       />
