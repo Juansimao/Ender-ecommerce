@@ -1,4 +1,5 @@
 export type CartProduct = {
+  code: string;
   title: string;
   tumbnailUrl: string;
   qty: number;
@@ -6,6 +7,8 @@ export type CartProduct = {
 };
 
 export type CartData = {
+  id: number;
+  code: string;
   createdAt: string;
   updatedAt: string;
   products: CartProduct[];
